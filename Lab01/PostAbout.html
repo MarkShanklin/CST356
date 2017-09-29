@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 1 Update</title>
+    </head>
+    <body>
+        <header>
+            <h1>Update Profile</h1>
+        </header>
+        <main>
+            <form action="http://www.oit.edu/cst356" method="post">
+            <div><label for="uxName">Name</label><input type="text" name="Name" id="uxName"></div>
+            <div><label for="uxEmailAddress">EmailAddress</label><input type="text" name="EmailAddress" id="uxEmailAddress"></div>
+            <div><label for="uxUserType">UserType</label><select name="UserType" id="uxUserType"><option value="Student">Student</option><option value="Faculty/Staff">Faculty/Staff</option></select></div>
+            <div><label for="uxHobby">Hobby</label><input type="text" name="Hobby" id="uxHobby"></div>
+            <div><label for="uxBand">Band</label><input type="text" name="Band" id="uxBand"></div>
+            <div><label for="uxBiography">Biography</label><textarea name="Biography" id="uxBiography" cols="30" rows="10"></textarea></div>
+            <div>
+                <table>
+                    <thead>
+                            <tr>
+                                <th><label for="uxCoursePrefix">Course Prefix</label></th>
+                                <th><label for="uxCourseNumber">Course Number</label></th>
+                                <th><label for="uxCourseDescription">Course Description</label></th>
+                            </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="CoursePrefix" id="uxCoursePrefix"></td>
+                            <td><input type="text" name="CourseNumber" id="uxCourseNumber"></td>
+                            <td><input type="text" name="CourseDescription" id="uxCourseNumber"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="hidden" name="Nickname" id="uxNickname" value="Masisaries">
+                <input type="submit" id="uxSubmit" value="Save Profile">
+            </div>
+            </form>
+        </main>
+    </body>
+</html>
