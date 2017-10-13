@@ -1,0 +1,222 @@
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    body{
+        background-color: #AA7039;
+    }
+    header{
+        background-color: white;
+    }
+    h1 {
+        padding: 15px 0;
+        margin: 0;
+    }
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+
+    #mainMenu {
+        background-color: #255E69;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+    #mainMenu li {
+        display: block;
+        padding: 10px;
+    }
+    #mainMenu li a {
+        text-decoration: none;
+        color: #15B1CE;
+    }
+    #mainMenu li a:hover {
+        color: rgb(45, 255, 234);
+    }
+    .subMenu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .subMenu li{
+        background-color:#831bd5;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: #18111C;
+        border-width: 1px;
+        margin: 5px 0;
+    }
+    .subMenu li:hover {
+        background-color: #E6128A;
+    }
+    .subMenu li a{
+        display: block;
+        text-decoration: none;
+        padding-left: 10px;
+        color: #15B1CE;
+    }
+    #wrapper{
+        background-color: white;
+    }
+    .col1 {
+        background-color: white;
+        margin: 0;
+        }
+    .col2{
+        box-sizing: border-box;
+    }
+    .col3{
+        
+    }
+    .borderedHeaderTable {
+        border-collapse: collapse;
+        margin: 0;
+        width: 100%;
+    }
+    .borderedHeaderTable thead tr th {
+        border-bottom: solid 1.5px #18111C;
+        border-top: solid 1.5px #18111C;
+        
+    }
+    .borderedHeaderTable thead tr th:first-child {
+        border-left: solid 1.5px #18111C;
+    }
+    .borderedHeaderTable thead tr th:last-child {
+        border-right: solid 1.5px #18111C;
+    }
+    .borderedHeaderTable tbody tr:nth-child(odd){
+        color: rgb(21, 255, 0);
+    }
+
+@media screen and (min-width:769px) and (max-width:991px){
+    #mainMenu {
+        background-color: #255E69;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+    #mainMenu li {
+        display: block;
+        text-align: center;
+        float: left;
+        width: 20%;
+        padding-top: 8px;
+    }
+    #mainMenu li a {
+        text-decoration: none;
+        color: #15B1CE;
+    }
+    .subMenu{
+        background-color: #582A72;
+        float: left;
+        width: 20%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .subMenu li{
+        background-color:#931bd5;
+        border-style: solid;
+        border-radius: 25px;
+        border-color: #18111C;
+        border-width: 1px;
+        margin: 5px 0;
+    }
+    .subMenu li a{
+        display: block;
+        text-decoration: none;
+        padding-left: 5px;
+    }
+    .col1{
+
+    }
+    .col2{
+        float: left;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .col3{
+        background-color: #7C7C6C;
+        float: left;
+        padding: 0 15px;
+        margin: 0;
+    }
+    .borderedHeaderTable {
+        border-collapse: collapse;
+        margin-left: 0px;
+    }
+    
+    .borderedHeaderTable thead tr th {
+        border-bottom: solid 1px #18111C;
+        border-top: solid 1px #18111C;
+    }
+}
+@media screen and (min-width:992px){
+    #mainMenu {
+        background-color: #255E69;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+    #mainMenu li {
+        display: block;
+        text-align: center;
+        float: left;
+        width: 20%;
+        padding-top: 8px;
+    }
+    #mainMenu li a {
+        text-decoration: none;
+        color: #15B1CE;
+    }
+    .subMenu{
+        background-color: #582A72;
+        float: left;
+        width: 20%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .subMenu li{
+        background-color:#931bd5;
+        border-style: solid;
+        border-radius: 25px;
+        border-color: #18111C;
+        border-width: 1px;
+        margin: 5px 0;
+    }
+    .subMenu li a{
+        display: block;
+        text-decoration: none;
+        padding-left: 5px;
+    }
+    .col1{
+
+    }
+    .col2{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 15px;
+    }
+    .col3{
+        background-color: #7C7C6C;
+        float: right;
+        width: 26%;
+        padding: 0 15px;
+        margin: 0;
+    }
+    .borderedHeaderTable {
+        border-collapse: collapse;
+        margin-left: 0px;
+    }
+    
+    .borderedHeaderTable thead tr th {
+        border-bottom: solid 1px #18111C;
+        border-top: solid 1px #18111C;
+    }
+}
+
+
