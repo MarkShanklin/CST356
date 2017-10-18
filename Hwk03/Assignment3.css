@@ -1,0 +1,74 @@
+html{
+    background-color: #003767;
+}
+#wrapper{
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+#colors #red a{
+    color: red;
+}
+#colors #yellow a{
+    color: yellow;
+}
+#colors #green a{
+    color: green;
+}
+#colors #blue a{
+    color: blue;
+}
+#deviceType a ul li{
+    display: none;
+}
+#mainMenu ul li{
+    float: left;
+    position: relative;
+    width: 25%;
+    background: paleturquoise;
+
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#mainMenu ul{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#mainMenu ul a{
+    display: block;
+    text-align: center;
+    color:darkviolet;
+    font-size: 2em;
+    font-family: Courier New, Courier, monospace;
+}
+#mainMenu ul li ul li {
+    float: none;
+    display: block;
+    position: relative;
+    width: 100%
+}
+#mainMenu ul ul{
+    display:  none;
+    position: absolute;
+}
+#mainMenu ul li:hover > ul{
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+}
+#mainMenu ul li:hover{
+    background: palegreen;
+}
