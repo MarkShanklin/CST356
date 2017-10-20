@@ -1,0 +1,23 @@
+@import 'Buttons';
+@import 'Lists';
+@import 'Mixins';
+@import 'Variables';
+
+html{
+    background: $primary-color;
+    header{
+        background: blue;
+        border: solid 2px white;
+        @include border-radius(15px);
+        h1{
+            font: 100% $font-stack;
+        }
+    }
+    nav{
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ var minify=require('gulp-minify-html');
 var scssSource='SCSS/**/*.scss';
 var htmlSource='HTML/**/*.html';
 var webDev='dev/';
+var webPub='pub/';
 
 gulp.task('compile-scss-dev', function(){
 	gulp.src(scssSource)
@@ -13,16 +14,22 @@ gulp.task('compile-scss-dev', function(){
 
 gulp.task('copy-html-dev', function(){
 	gulp.src(htmlSource)
-	.pipe(gulp.dest(webDev + 'css'))
+	.pipe(gulp.dest(webDev))
 });
 
 gulp.task('minify-html', function(){
-	gulp.src('./html/*.html')
+	gulp.src(htmlSource)
 	.pipe(minify())
-	.pipe(gulp.dest('./pub'))
+	.pipe(gulp.dest(webPub))
+});
+
+gulp.task('compile-scss-pub', function(){
+	gulp.src(scssSource)
+	.pipe(sass({outputStyle: 'compressed'}))
+	.pipe(gulp.dest(webPub + 'css'))
 });
 
 gulp.task("watch", function(){
-	gulp.watch(scssSource, ['compile-scss-dev']);
-	gulp.watch(htmlSource,['copy-html-dev']);
+	gulp.watch(scssSource, ['compile-scss-dev','compile-scss-pub']);
+	gulp.watch(htmlSource,['copy-html-dev','minify-html']);
 });
