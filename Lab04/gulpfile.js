@@ -20,4 +20,9 @@ gulp.task('minify-html', function(){
 	gulp.src('./html/*.html')
 	.pipe(minify())
 	.pipe(gulp.dest('./pub'))
-	]);
+});
+
+gulp.task("watch", function(){
+	gulp.watch(scssSource, ['compile-scss-dev']);
+	gulp.watch(htmlSource,['copy-html-dev']);
+});
