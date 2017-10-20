@@ -6,13 +6,13 @@ var htmlSource='HTML/**/*.html';
 var webDev='dev/';
 
 gulp.task('compile-scss-dev', function(){
-	gulp.src('scssSource')
+	gulp.src(scssSource)
 	.pipe(sass()) //Put this as a parameter to sass() to compress output:  { outputStyle: 'compressed' }
 	.pipe(gulp.dest(webDev + 'css'))
 });
 
 gulp.task('copy-html-dev', function(){
-	gulp.src('htmlSource')
+	gulp.src(htmlSource)
 	.pipe(gulp.dest(webDev + 'css'))
 });
 
