@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "calculator";
+    src: url("fonts/digital-7.woff") format('woff');
+    }
+
+button {
+    font: 4em calculator;
+    width: 24%;
+    height: 70px;
+    padding: 0;
+    margin: 1px;
+    background-color: powderblue;
+}
+button.wide{
+    width: 48.6%;
+}
+#div{
+    background-color: rgb(62, 188, 255);
+}
+#mul{
+    background-color: rgb(62, 188, 255);
+}
+#sub{
+    background-color: rgb(62, 188, 255);
+}
+#add{
+    background-color: rgb(62, 188, 255);
+}
+#mod{
+    background-color: rgb(62, 188, 255);
+}
+#del{
+    background-color: rgb(255, 62, 62);
+}
+#eq{
+    background-color: rgb(78, 255, 62);
+}
+input#calcarea{
+    padding: 0;
+    margin: 1px;
+    height: 70px;
+    width: 97.6%;
+    font: 4em calculator;
+    text-align: right;
+}
+h1{
+    font: 4em calculator;
+    text-align: center;
+}
+h2{
+    font: 3em calculator;
+    text-align: center;
+}
+img{
+    width: 100%
+}
