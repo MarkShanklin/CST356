@@ -1,0 +1,19 @@
+{
+  "name": "lab06",
+  "version": "1.0.0",
+  "description": "Memory Game with JavaScript and jQuery",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark A Shanklin",
+  "license": "ISC"
+}
