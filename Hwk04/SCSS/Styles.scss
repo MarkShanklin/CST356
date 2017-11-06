@@ -15,10 +15,12 @@
  @import "../FA/stacked";
  @import "../FA/icons";
  @import "../FA/screen-reader";
+ @import "_Variables.scss";
+ @import "_BootstrapOverrides.scss";
 
 html{
     body{
-        background: powderblue;
+        background: $alt-color;
         div.container{
             div#myCarousel{
                 div.carousel-inner{
