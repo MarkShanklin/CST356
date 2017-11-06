@@ -2328,6 +2328,11 @@
   overflow: visible;
   clip: auto; }
 
+.btn-default {
+  color: white;
+  background-color: #003767;
+  border-color: #ffd24f; }
+
 html body {
   background: powderblue; }
   html body div.container div#myCarousel div.carousel-inner img {
