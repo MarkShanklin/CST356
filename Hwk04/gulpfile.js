@@ -4,10 +4,9 @@ var minify=require('gulp-minify-html');
 var scssSource='SCSS/**/*.scss';
 var htmlSource='HTML/**/*.html';
 var webDev='dist/dev/';
-var webPub='dist/pub/';
-var imgFile='img/**/*.*'
-var jsFile='js/**/*.*'
-var jsonFile='json/**/*.*'
+var webPub='dist/prod/';
+var fontFile='fonts/**/*.*'
+
 
 gulp.task('compile-scss-dev', function(){
 	gulp.src(scssSource)
@@ -37,15 +36,7 @@ gulp.task("watch", function(){
 	gulp.watch(htmlSource,['copy-html-dev','minify-html']);
 });
 
-gulp.task('copy-img-dev', function(){
-	gulp.src(imgFile)
-	.pipe(gulp.dest(webDev + 'img'))
-});
-gulp.task('copy-js-dev', function(){
-	gulp.src(jsFile)
-	.pipe(gulp.dest(webDev + 'img'))
-});
-gulp.task('copy-json-dev', function(){
-	gulp.src(jsonFile)
-	.pipe(gulp.dest(webDev + 'img'))
+gulp.task('copy-font-dev', function(){
+	gulp.src(fontFile)
+	.pipe(gulp.dest(webDev + 'fonts'))
 });

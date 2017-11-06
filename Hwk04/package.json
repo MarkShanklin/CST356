@@ -1,0 +1,11 @@
+{
+  "name": "hwk04",
+  "version": "1.0.0",
+  "description": "Assignment 4 CST356",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark A Shanklin",
+  "license": "ISC"
+}
