@@ -43,9 +43,22 @@ gulp.task('copy-img-dev', function(){
 });
 gulp.task('copy-js-dev', function(){
 	gulp.src(jsFile)
-	.pipe(gulp.dest(webDev + 'img'))
+	.pipe(gulp.dest(webDev + 'js'))
 });
 gulp.task('copy-json-dev', function(){
 	gulp.src(jsonFile)
-	.pipe(gulp.dest(webDev + 'img'))
+	.pipe(gulp.dest(webDev + 'json'))
+});
+
+gulp.task('copy-img-pub', function(){
+	gulp.src(imgFile)
+	.pipe(gulp.dest(webPub + 'img'))
+});
+gulp.task('copy-js-pub', function(){
+	gulp.src(jsFile)
+	.pipe(gulp.dest(webPub + 'js'))
+});
+gulp.task('copy-json-pub', function(){
+	gulp.src(jsonFile)
+	.pipe(gulp.dest(webPub + 'json'))
 });
