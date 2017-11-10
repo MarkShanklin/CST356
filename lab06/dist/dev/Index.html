@@ -13,31 +13,28 @@
     </header>
 
     <nav>
-        <div id="Timer"></div>
+        <h2> Game time elapsed:</h2>
+        <div id="Timer">
+        </div>
     </nav>
 
     <main>
         <nav>
-            <ul id='GameBoard'>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-                <li><div class="card"></div></li>
-            </ul>
+            <ul id='GameBoard'> </ul>
         </nav>
         <section>
-            <button>New Game</button>
+            <button id='ngButton'>New Game</button>
         </section>
         <aside>
-
+            <table id="scoreboard">
+                <h2>ScoreBoard</h2>
+                <thead><th>Name</th><th>Time</th></thead>
+                <tbody><tr></tr><tr></tr></tbody>
+            </div>
         </aside>
     </main>
 </body>
-<script>src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'</script>
+<script src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src = '/js/MemoryGame.js'></script>
+<script src = '/js/ArrayShuffle.js'></script>
 </html>

@@ -16,10 +16,19 @@ html{
             color: $primary-color;
             text-align: center;
             background: $alt-color;
-            @include border-radius(15px);
+            @include border-radius(25px);
         }
     }
     nav{
+        font: $font-stack;
+        color: $primary-color;
+        text-align: center;
+        background: $alt-color;
+        @include border-radius(25px);
+        div#Timer{
+            font-size:2em;
+        }
+
         ul{
             padding: 0;
             margin: 0;
@@ -57,5 +66,28 @@ html{
 
             background-color: powderblue;
         }
+    }
+    aside{
+        font: 2em, $font-stack;
+        color: $primary-color;
+        text-align: center;
+        background: $alt-color;
+        @include border-radius(25px);
+        table#scoreboard{
+            th{
+                width: 50%;
+            }
+            tr{
+                width: 50%;
+            }
+            width: 100%;
+            font: 2em, $font-stack;
+            color: $primary-color;
+            text-align: center;
+            background: $alt-color;
+            @include border-radius(25px);
+        }
+        padding: 0;
+        margin-top: 25px;
     }
 }
