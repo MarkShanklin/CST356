@@ -7,6 +7,7 @@ function MemoryGame(){
     var gameTimer;
     var actionTimer;
     var highScore;
+    var scoreBoard = $('#scoreboard');
      
     $.getJSON('/json/CardDef.json', function(data){cards = data});
 
@@ -63,6 +64,7 @@ function MemoryGame(){
                         var winTime = gameTime;
                         clearInterval(gameTimer);
                         alert('winner!!!!!');
+                        //highScore.push(winTime,Player);
                         var Player = prompt('Enter Your Name: ','Player');
                     }, 500); 
                 }

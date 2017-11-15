@@ -56,10 +56,6 @@ gulp.task('copy-img-pub', function(){
 	gulp.src(imgFile)
 	.pipe(gulp.dest(webPub + 'img'))
 });
-gulp.task('copy-js-pub', function(){
-	gulp.src(jsFile)
-	.pipe(gulp.dest(webPub + 'js'))
-});
 gulp.task('copy-json-pub', function(){
 	gulp.src(jsonFile)
 	.pipe(gulp.dest(webPub + 'json'))
@@ -67,5 +63,5 @@ gulp.task('copy-json-pub', function(){
 gulp.task("watch", function(){
 	gulp.watch(scssSource, ['compile-scss-dev','compile-scss-pub']);
 	gulp.watch(htmlSource,['copy-html-dev','minify-html']);
-	gulp.watch(jsSource,['copy-js-dev', 'copy-json-dev']);
+	gulp.watch(jsSource,['copy-js-dev','copy-json-dev','minify-js','uglify-js']);
 });
