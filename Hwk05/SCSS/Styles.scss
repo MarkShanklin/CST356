@@ -1,0 +1,54 @@
+@import 'Buttons';
+@import 'Lists';
+@import 'Mixins';
+@import 'Variables';
+
+html{
+    background: $primary-color;
+    header{
+        margin: 0;
+        div{
+            height: 50px;
+        }
+        img{
+            width: 100%;
+            border: solid 2px $alt-color;
+            @include border-radius(15px); 
+        }
+        h1{
+            font: 2em $font-stack;
+            color: $primary-color;
+            text-align: center;
+            background: $alt-color;
+            @include border-radius(15px);
+        }
+    }
+    section{
+        list-style: none;
+
+        @include border-radius(15px);
+        .post{
+            font: 1em $font-stack;
+            color: $primary-color;
+            text-align: left;
+            padding: 15px;
+            margin-top: 5px;
+            background: $alt-color;
+            @include border-radius(15px);
+        }
+        #pic{
+            width: 50px;
+        }
+    }
+    aside{
+        button{
+            @include border-radius(15px);
+            width: 100%;
+            padding: 0;
+            margin-top: 5px;
+            font: 2em $font-stack;
+            color: $primary-color;
+            background-color: $secondary-color;
+        }
+    }
+}

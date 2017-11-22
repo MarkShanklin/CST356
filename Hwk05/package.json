@@ -1,0 +1,19 @@
+{
+  "name": "hwk05",
+  "version": "1.0.0",
+  "description": "Facebook API",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  },
+  "scripts": {
+    "start": "http-server -p  8080 dist/dev"
+  },
+  "author": "Mark A Shanklin",
+  "license": "ISC"
+}
