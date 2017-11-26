@@ -1,19 +1,19 @@
 function MemoryGame(){
     var board = $('#GameBoard');
     var timeDisp = $('#Timer');
-    var cards;
-    var gameCards;
+    var cards = [];
+    var gameCards = [];
     var gameTime;
     var gameTimer;
     var actionTimer;
-    var highScore;
-    var scoreBoard = $('#scoreboard');
+    var gameInstance = this;
+    var highScore = [];
+    this.scoreBoardUpdated = null;
      
     $.getJSON('/json/CardDef.json', function(data){cards = data});
 
-    this.NewGame = function(numMatches, boardID)
+    this.NewGame = function(numMatches)
     {
-        board = $('#' + boardID);
         gameCards=[];
         gameTime = 0;
         if(numMatches > 10){ alert('invalid number of matches'); return 0;}
@@ -63,9 +63,13 @@ function MemoryGame(){
                     actionTimer = setTimeout(function(){
                         var winTime = gameTime;
                         clearInterval(gameTimer);
-                        alert('winner!!!!!');
-                        //highScore.push(winTime,Player);
+                        alert('You Win!!!!!');
                         var Player = prompt('Enter Your Name: ','Player');
+                        highScore.push({name: Player,time: winTime});
+                        highScore.sort(function(a, b){ return a.time > b.time;});
+                        if (typeof gameInstance.ScoreboardUpdated === "function") {
+                            gameInstance.ScoreboardUpdated(highScore);
+                        }
                     }, 500); 
                 }
             });
@@ -76,5 +80,11 @@ function MemoryGame(){
 };
 $(document).ready(function(){
     var memGame = new MemoryGame();
-    document.getElementById('ngButton').onclick = function(){ memGame.NewGame(2, "GameBoard"); };
+    memGame.ScoreboardUpdated = function (data) {
+        $('#scoreboard').html('');
+        data.forEach(function (item) {
+            $('#scoreboard').append("<tr><td>" + item.name + "</td><td>" + item.time + "</td></tr>");
+        }, this);
+    };
+    document.getElementById('ngButton').onclick = function(){ memGame.NewGame(2); };
 });

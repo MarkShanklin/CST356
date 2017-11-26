@@ -68,20 +68,24 @@ html{
         }
     }
     aside{
-        font: 2em, $font-stack;
+        font: 4em, $font-stack;
         color: $primary-color;
         text-align: center;
         background: $alt-color;
         @include border-radius(25px);
-        table#scoreboard{
+        table{
             th{
+                font: 3em, $font-stack;
                 width: 50%;
+                padding: 5px;
             }
-            tr{
+            td{
+                font: 3em, $font-stack;
                 width: 50%;
+                padding: 5px;
             }
             width: 100%;
-            font: 2em, $font-stack;
+            font: 3em, $font-stack;
             color: $primary-color;
             text-align: center;
             background: $alt-color;
